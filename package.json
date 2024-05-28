@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A simple architecture company website",
   "scripts": {
-    "build": "cp -R * dist/"
+    "build": "mkdir -p dist && cp -R * dist/"
   },
   "dependencies": {
     "netlify-lambda": "^2.0.16"
