@@ -1,0 +1,200 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+main {
+    flex: 1;
+    padding-top: 4em;
+    /* ヘッダーの高さを確保 */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff6600;
+}
+
+.hero {
+    background-image: url('hero.jpg');
+    background-size: cover;
+    text-align: center;
+    padding: 5em 0;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.about,
+.services,
+.portfolio,
+.contact,
+.company-history,
+.vision-mission,
+.team {
+    padding: 2em 1em;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: auto;
+}
+
+.service-item,
+.project-item,
+.team-member {
+    margin: 1em 0;
+}
+
+.project-item img,
+.team-member img {
+    max-width: 100%;
+    height: auto;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact form label {
+    margin-top: 1em;
+}
+
+.contact form input,
+.contact form textarea {
+    width: 80%;
+    padding: 0.5em;
+    margin-top: 0.5em;
+}
+
+.contact form button {
+    margin-top: 1em;
+    padding: 0.5em 2em;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.contact form button:hover {
+    background-color: #555;
+}
+
+/* モバイルフレンドリーなナビゲーションバー */
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute;
+    right: 1em;
+    top: 1em;
+}
+
+.nav-toggle span {
+    background: white;
+    height: 2px;
+    margin: 5px 0;
+    width: 25px;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .nav-toggle {
+        display: flex;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        background: #333;
+        width: 100%;
+        top: 3.5em;
+        left: 0;
+    }
+
+    nav ul li {
+        text-align: center;
+        margin: 1em 0;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    .hero {
+        padding: 3em 0;
+    }
+
+    .service-item,
+    .project-item,
+    .team-member {
+        margin: 0.5em 0;
+    }
+
+    .contact form input,
+    .contact form textarea {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul li a {
+        font-size: 1em;
+    }
+
+    .hero h1 {
+        font-size: 1.5em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+}
