@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>建築会社 - お問い合わせ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="about.html">会社概要</a></li>
+                <li><a href="services.html">サービス</a></li>
+                <li><a href="portfolio.html">実績</a></li>
+                <li><a href="contact.html">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="contact">
+            <h2>お問い合わせ</h2>
+            <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+            <form id="contactForm" action="https://ssgform.com/s/d5MX55tOc1g3" method="post">
+                <label for="name">名前:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">メールアドレス:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">メッセージ:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button
+                class="g-recaptcha"
+                data-sitekey="6LebReopAAAAABVSeGDrJZ7aFIT41z3x7OHR02Q0"
+                data-callback="onSubmit"
+                type="submit">送信</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 建築会社</p>
+    </footer>
+    <script src="script.js">
+    </script>
+</body>
+
+</html>
