@@ -1,0 +1,9 @@
+{
+  "name": "architecture-website",
+  "version": "1.0.0",
+  "description": "A simple architecture company website",
+  "scripts": {
+    "build": "cp -R * dist/"
+  },
+  "dependencies": {}
+}
