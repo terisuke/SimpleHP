@@ -36,8 +36,11 @@
                 <input type="email" id="email" name="email" required>
                 <label for="message">メッセージ:</label>
                 <textarea id="message" name="message" required></textarea>
-                <div class="g-recaptcha" data-sitekey="6LebReopAAAAABVSeGDrJZ7aFIT41z3x7OHR02Q0"></div>
-                <button type="submit">送信</button>
+                <button
+                class="g-recaptcha"
+                data-sitekey="6LebReopAAAAABVSeGDrJZ7aFIT41z3x7OHR02Q0"
+                data-callback="onSubmit"
+                type="submit">送信</button>
             </form>
         </section>
     </main>
