@@ -5,5 +5,7 @@
   "scripts": {
     "build": "cp -R * dist/"
   },
-  "dependencies": {}
+  "dependencies": {
+    "netlify-lambda": "^2.0.16"
+  }
 }
