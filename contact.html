@@ -29,19 +29,21 @@
         <section class="contact">
             <h2>お問い合わせ</h2>
             <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-            <form id="contactForm" action="https://ssgform.com/s/d5MX55tOc1g3" method="post">
-                <label for="name">名前:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">メールアドレス:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">メッセージ:</label>
-                <textarea id="message" name="message" required></textarea>
-                <button
-                class="g-recaptcha"
-                data-sitekey="6LebReopAAAAABVSeGDrJZ7aFIT41z3x7OHR02Q0"
-                data-callback="onSubmit"
-                type="submit">送信</button>
-            </form>
+            <div class="container"></div>
+                <form id="contactForm" action="https://ssgform.com/s/d5MX55tOc1g3" method="post">
+                    <label for="name">名前:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">メールアドレス:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">メッセージ:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button
+                    class="g-recaptcha"
+                    data-sitekey="6LebReopAAAAABVSeGDrJZ7aFIT41z3x7OHR02Q0"
+                    data-callback="onSubmit"
+                    type="submit">送信</button>
+                </form>
+            </div>
         </section>
     </main>
     <footer>

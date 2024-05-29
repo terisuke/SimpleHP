@@ -25,6 +25,13 @@ main {
     /* ヘッダーの高さを確保 */
 }
 
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 nav ul {
     list-style: none;
     display: flex;
