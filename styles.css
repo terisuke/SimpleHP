@@ -88,7 +88,7 @@ ul {
 
 .slideshow-fade {
     position: absolute;
-    top: 5em;
+    top: 8rem;
     left: 0;
     width: 100%;
     height: 100%;
@@ -98,7 +98,7 @@ ul {
 .slideshow-fade img {
     width: 100%;
     /* コンテナの幅に合わせる */
-    height: 100%;
+    height: auto;
     /* コンテナの高さに合わせる */
     object-fit: cover;
     /* 画像がコンテナに合わせてカバーされるように調整 */
@@ -120,7 +120,11 @@ ul {
     opacity: 1;
 }
 
-.hero h1, .hero p {
+.hero {
+    padding-top: 3rem;
+}
+
+.hero h1 p {
     position: relative;
     text-align: center; /* 中央揃え */
     padding: 10px;
@@ -270,14 +274,9 @@ footer {
     nav ul.active {
         display: flex;
     }
-    .hero h1 {
-        padding: 5em 0 0 0;
-    }
-    .hero p {
-        padding: 10px;
-    }
+
     .slideshow-fade {
-        top: 8em;
+        top: 10em;
     }
 
     .service-item,
