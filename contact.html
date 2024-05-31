@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>建築会社 - お問い合わせ</title>
+    <title>SimpleHP - お問い合わせ</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -16,6 +16,7 @@
             <span></span>
         </div>
         <nav>
+            <h1>SimpleHP</h1>
             <ul>
                 <li><a href="index.html">ホーム</a></li>
                 <li><a href="about.html">会社概要</a></li>
@@ -26,28 +27,57 @@
         </nav>
     </header>
     <main>
-        <section class="contact">
-            <h2>お問い合わせ</h2>
-            <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-            <div class="container"></div>
-                <form id="contactForm" action="https://ssgform.com/s/d5MX55tOc1g3" method="post">
-                    <label for="name">名前:</label>
-                    <input type="text" id="name" name="name" required>
-                    <label for="email">メールアドレス:</label>
-                    <input type="email" id="email" name="email" required>
-                    <label for="message">メッセージ:</label>
-                    <textarea id="message" name="message" required></textarea>
-                    <button
-                    class="g-recaptcha"
-                    data-sitekey="6LebReopAAAAABVSeGDrJZ7aFIT41z3x7OHR02Q0"
-                    data-callback="onSubmit"
-                    type="submit">送信</button>
-                </form>
-            </div>
-        </section>
+        <div class="container">
+            <section class="FAQ">
+                <h2>よくある質問</h2>
+                <div class="FAQ-item">
+                    <h3>Q. お問い合わせから返信がない場合はどうすればいいですか？</h3>
+                    <p>A. お問い合わせから3営業日経っても返信がない場合は、お手数ですが再度お問い合わせフォームからご連絡ください。</p>
+                </div>
+                <div class="FAQ-item">
+                    <h3>Q. どのような支払い方法が利用できますか？</h3>
+                    <p>A. 当社では、クレジットカード、銀行振込、またはPayPalを通じてのお支払いを受け付けています。</p>
+                </div>
+                <div class="FAQ-item">
+                    <h3>Q. サービスのキャンセルは可能ですか？</h3>
+                    <p>A. サービス開始前であればキャンセル可能ですが、開始後のキャンセルには条件がございます。詳細は利用規約をご確認ください。</p>
+                </div>
+                <div class="FAQ-item">
+                    <h3>Q. 個人情報の取り扱いについて教えてください。</h3>
+                    <p>A. 当社はお客様の個人情報を厳重に管理し、第三者に譲渡または公開することはありません。プライバシーポリシーをご覧ください。</p>
+                </div>
+                <div class="FAQ-item">
+                    <h3>Q. 製品の保証期間はどのくらいですか？</h3>
+                    <p>A. 製品によって保証期間は異なりますが、一般的には購入日から1年間の保証が付いています。</p>
+                </div>
+                    
+            </section>
+            <section class="contact">
+                <h2>お問い合わせ</h2>
+                <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+                <div class="container">
+                    <form id="contactForm" action="https://ssgform.com/s/d5MX55tOc1g3" method="post">
+                        <label for="name">お名前:</label>
+                        <input type="text" id="name" name="name" required>
+                        <label for="email">メールアドレス:</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="message">メッセージ:</label>
+                        <textarea id="message" name="message" required></textarea>
+                        <button
+                        class="g-recaptcha"
+                        data-sitekey="6LebReopAAAAABVSeGDrJZ7aFIT41z3x7OHR02Q0"
+                        data-callback="onSubmit"
+                        type="submit">送信</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+        <a class="pagetop" href="#">
+            <div class="pagetop__arrow"></div>
+        </a>
     </main>
     <footer>
-        <p>&copy; 2024 建築会社</p>
+        <p>&copy; 2024 SimpleHP</p>
     </footer>
     <script src="script.js">
     </script>
