@@ -270,9 +270,11 @@ footer {
     nav ul.active {
         display: flex;
     }
-
-    .hero h1 p {
-        padding: 20px;
+    .hero h1 {
+        padding: 5em 0 0 0;
+    }
+    .hero p {
+        padding: 10px;
     }
     .slideshow-fade {
         top: 8em;
