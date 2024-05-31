@@ -122,10 +122,8 @@ ul {
 
 .hero h1, .hero p {
     position: relative;
-    z-index: 2; /* スライドショーの上に表示 */
-    color: #fff; /* 視認性を高めるための色 */
     text-align: center; /* 中央揃え */
-    padding: 20px;
+    padding: 10px;
 }
 
 nav ul,h1,a {
@@ -273,8 +271,11 @@ footer {
         display: flex;
     }
 
-    .hero {
-        padding: 3em 0;
+    .hero h1 p {
+        padding: 10px;
+    }
+    .slideshow-fade {
+        top: 8em;
     }
 
     .service-item,
