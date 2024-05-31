@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>建築会社 - ホーム</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="about.html">会社概要</a></li>
+                <li><a href="services.html">サービス</a></li>
+                <li><a href="portfolio.html">実績</a></li>
+                <li><a href="contact.html">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <section class="hero">
+                <h1>建築会社</h1>
+                <p>私たちの使命は、あなたの夢を実現することです</p>
+                <img src="img/hero.jpg" alt="Hero Image" loading="lazy">
+            </section>
+            <section class="about">
+                <h2>私たちについて</h2>
+                <p>建築会社は、最高の建築サービスを提供します。</p>
+            </section>
+            <section class="services">
+                <h2>サービス</h2>
+                <div class="service-item">
+                    <h3>新築工事</h3>
+                    <p>高品質な新築工事を提供します。</p>
+                </div>
+                <div class="service-item">
+                    <h3>リフォーム</h3>
+                    <p>既存の建物を美しく改修します。</p>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 建築会社</p>
+    </footer>
+    <script>
+        document.querySelector('.nav-toggle').addEventListener('click', function () {
+            document.querySelector('nav ul').classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>
