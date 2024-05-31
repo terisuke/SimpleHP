@@ -7,7 +7,7 @@ function copyFiles(srcDir, destDir) {
     const destFile = path.join(destDir, file);
 
     if (fs.lstatSync(srcFile).isDirectory()) {
-      if (file !== 'dist') { // distディレクトリを除外
+      if (file !== 'dist' && file !== '.git') {
         fs.mkdirSync(destFile, { recursive: true });
         copyFiles(srcFile, destFile);
       }
